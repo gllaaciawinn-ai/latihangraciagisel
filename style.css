@@ -1,0 +1,143 @@
+
+/* BACKGROUND */
+body {
+    background-color: #ffe6f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #d63384;
+    font-size: 30px;
+}
+
+header p {
+    color: #c2185b;
+    font-size: 18px;
+}
+
+header h2 {
+    color: #ff69b4;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* BIODATA */
+.biodata {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    border: 3px solid pink;
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px pink;
+
+    text-align: center;
+}
+
+/* NAMA */
+.biodata h2 {
+    color: #d63384;
+    text-align: center;
+}
+
+/* FOTO PROFIL */
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid pink;
+    padding: 5px;
+
+    transition: 0.3s;
+}
+
+.foto-profil:hover {
+    box-shadow: 0 0 20px hotpink;
+    transform: scale(1.1);
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* SELURUH ISI BIODATA DI TENGAH */
+td {
+    text-align: center;
+    padding: 12px 5px;
+    border-bottom: 1px solid #ffcce0;
+    color: #8e315b;
+}
+
+/* JUDUL DATA */
+td:first-child {
+    font-weight: bold;
+    color: #d63384;
+}
+
+/* FOTO BERSAMA */
+.foto-bersama {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 20px;
+    border: 4px solid pink;
+    padding: 5px;
+
+    transition: 0.3s;
+}
+
+.foto-bersama:hover {
+    box-shadow: 0 0 20px hotpink;
+    transform: scale(1.05);
+}
+
+/* TULISAN FOTO BERSAMA */
+.bersama p {
+    color: #d63384;
+    font-style: italic;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #c2185b;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .biodata {
+        width: 100%;
+        padding: 15px;
+    }
+
+    td {
+        font-size: 13px;
+    }
+}
